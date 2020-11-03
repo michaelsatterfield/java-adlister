@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-
+//class                       //url
 @WebServlet(name = "Servlet", urlPatterns = "/users")
 public class Servlet extends HttpServlet {
 
@@ -27,7 +27,7 @@ public class Servlet extends HttpServlet {
     private int counter = 0;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        counter += 1;
+        counter++;
         response.getWriter().println("<h1>The count is " + counter + ".</h1>");
 
 
