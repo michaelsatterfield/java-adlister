@@ -2,10 +2,14 @@
 
 <html>
 <head>
-    <title>Login</title>
+    <title>profile</title>
+    <%@ include file="partials/navbar.jsp" %>
+    <%@ include file="partials/head.jsp"%>
 </head>
+profile
 <body>
-
+<%@ include file="partials/navbar.jsp" %>
+profile
 
 
 </body>

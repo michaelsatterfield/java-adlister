@@ -1,5 +1,8 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%--    determine if its a post method (if statement written in java)  --%>
 <%
     if(request.getMethod().equalsIgnoreCase("post")) {
         String username = request.getParameter("username");
@@ -17,7 +20,10 @@
 </head>
 <body>
 <%@ include file="partials/navbar.jsp" %>
-<form action="/login.jsp" method="POST">
+<%@ include file="partials/head.jsp"%>
+
+<h1>Hello there, ${name}!</h1>
+<form action="${pageContext.request.contextPath}/login.jsp" method="POST">
     <div class="container">
         <label for="username">Username</label>
         <input name="username" id="username" type="text" placeholder="Enter Username" name="uname" required>
