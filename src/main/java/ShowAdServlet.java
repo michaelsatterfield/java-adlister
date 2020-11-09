@@ -19,4 +19,6 @@ public class ShowAdServlet extends HttpServlet {
         request.setAttribute("ads", ads);
         request.getRequestDispatcher("/ads/index.jsp").forward(request, resp);
     }
+
+
 }
