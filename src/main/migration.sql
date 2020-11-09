@@ -22,3 +22,6 @@ CREATE TABLE ads
     FOREIGN KEY (user_id) REFERENCES users (id)
         ON DELETE CASCADE
 );
+
+INSERT INTO ads (user_id, title, description)values(1,'xbox','brand new asking 500 obo');
+INSERT INTO users(username, email, password) values('joeC', 'jo1@funmail.com','myPassword');
