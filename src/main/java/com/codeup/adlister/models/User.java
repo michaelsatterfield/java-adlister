@@ -14,6 +14,9 @@ public class User {
         this.email = email;
         this.password = password;
     }
+    public User(String Username,String email, String password){
+
+    }
 
     public long getId() {
         return id;
