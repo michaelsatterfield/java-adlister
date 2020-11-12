@@ -1,10 +1,5 @@
 package com.codeup.adlister.dao;
-//
-//public class Config {
-//    private String url;
-//    private String user;
-//    private String password;
-//};
+
 
 public class Config {
         public String getURL() {
